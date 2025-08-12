@@ -14,20 +14,12 @@
   transition: background-color var(--common-transition);
 }
 
-@media screen and (max-width: 768px) {
-  .primary-button {
-    padding: 14px 70px;
-    font-size: 14px;
-    line-height: 1.71;
-  }
-}
-
 .primary-button:hover,
 .primary-button:focus {
   background-color: var(--hover-green);
 }
 
-.primary-outlined-button {
+.outlined-button {
   display: inline-flex;
   padding: 16px 64px;
   justify-content: center;
@@ -44,17 +36,22 @@
     color var(--common-transition), border var(--common-transition);
 }
 
+.outlined-button:hover,
+.outlined-button:focus {
+  color: var(--green);
+  background-color: var(--white);
+  border: 1px solid var(--white);
+}
+
 @media screen and (max-width: 768px) {
-  .primary-outlined-button {
+  .primary-button {
     padding: 14px 70px;
     font-size: 14px;
     line-height: 1.71;
   }
-}
-
-.primary-outlined-button:hover,
-.primary-outlined-button:focus {
-  color: var(--green);
-  background-color: var(--white);
-  border: 1px solid var(--white);
+  .outlined-button {
+    padding: 14px 70px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
