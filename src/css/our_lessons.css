@@ -11,7 +11,7 @@
   padding: 40px 20px;
   border: 1px solid var(--green);
   border-radius: 16px;
-  transition: background-color 250ms var(--common-transition);
+  transition: background-color var(--common-transition);
 }
 
 .lesson-item:hover {
@@ -45,7 +45,7 @@
 .lesson-item-price,
 .lesson-item-title,
 .lesson-item-text {
-  transition: 250ms var(--common-transition);
+  transition: var(--common-transition);
   transition-property: opacity, color;
 }
 
@@ -72,14 +72,14 @@
   margin-top: auto;
   height: 52px;
   border: 1px solid var(--green);
-  transition: 250ms var(--common-transition);
+  transition: var(--common-transition);
   transition-property: background-color, border-color;
 }
 
 .lesson-button.active {
   background-color: transparent;
   border: 1px solid var(--white);
-  transition: 250ms var(--common-transition);
+  transition: var(--common-transition);
   transition-property: color, background-color;
 }
 

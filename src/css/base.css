@@ -111,7 +111,7 @@ a {
   border-radius: 12px;
   padding: 14px 32px;
   border: none;
-  transition: 250ms var(--common-transition);
+  transition: var(--common-transition);
   transition-property: background-color, color;
 }
 
