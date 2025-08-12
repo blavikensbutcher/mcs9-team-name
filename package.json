@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --base=/mcs9-team-name//",
+    "dev": "vite --open",
+    "build": "vite build --base=/mcs9-team-name/",
     "preview": "vite preview"
   },
   "devDependencies": {

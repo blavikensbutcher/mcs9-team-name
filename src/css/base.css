@@ -7,11 +7,15 @@
   --lighter-green: #bee8cc;
   --gray: #f3f5f6;
   --white: #fff;
+  --white-button-text: rgba(255, 255, 255, 0.4);
   --hover-green: #38ae5f;
   --form-border: rgba(18, 20, 23, 0.1);
   --form-agreement-text: rgba(18, 20, 23, 0.5);
   --form-app-text: rgba(255, 255, 255, 0.7);
-  --common-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  --icon-color: rgba(18, 20, 23, 0.8);
+  --icon-hover: rgba(77, 194, 116, 0.8);
+  --icon-border: rgba(77, 194, 116, 0.1);
+  --common-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
