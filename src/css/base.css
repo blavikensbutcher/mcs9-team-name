@@ -9,6 +9,7 @@
   --white: #fff;
   --white-border: rgba(255, 255, 255, 0.1);
   --white-button-text: rgba(255, 255, 255, 0.4);
+  --white-review-text: rgba(255, 255, 255, 0.5);
   --hover-green: #38ae5f;
   --form-border: rgba(18, 20, 23, 0.1);
   --form-agreement-text: rgba(18, 20, 23, 0.5);
@@ -16,6 +17,7 @@
   --icon-color: rgba(18, 20, 23, 0.8);
   --icon-hover: rgba(77, 194, 116, 0.8);
   --icon-border: rgba(77, 194, 116, 0.1);
+  --btn-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   --common-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

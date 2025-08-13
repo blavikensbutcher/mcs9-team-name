@@ -1,3 +1,148 @@
-.mock {
-  display: none;
+.reviews-slider {
+  position: relative;
+  width: 100%;
+}
+.viewport {
+  overflow: hidden;
+  outline: none;
+  user-select: none;
+}
+
+.review-track {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 32px;
+  align-items: stretch;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  transition: transform var(--common-transition);
+}
+
+.review-item {
+  border-radius: 30px;
+  background: var(--gray);
+  padding: 20px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 16px;
+  }
+}
+
+.info-box {
+  border-radius: 15px;
+  background: var(--green);
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.img_box {
+  grid-area: img;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #4dc274;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.about_img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.info-title {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.info-subtitle {
+  color: var(--white-review-text);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+.review-text {
+  color: var(--form-agreement-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 43%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background: var(--lighter-green);
+  color: var(--white);
+  box-shadow: var(--btn-shadow);
+  display: grid;
+  place-items: center;
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: var(--common-transition);
+  transition-property: color, opacity, background;
+}
+.nav-btn:hover,
+.nav-btn:focus {
+  opacity: 0.9;
+  background: var(--white);
+  color: var(--green);
+}
+.nav-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.nav-btn.prev {
+  left: -4px;
+}
+.nav-btn.next {
+  right: -4px;
+}
+
+@media (max-width: 767.98px) {
+  .nav-btn.prev {
+    left: 4px;
+  }
+  .nav-btn.next {
+    right: 4px;
+  }
+}
+
+.nav-btn-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  stroke: none;
+}
+
+.prev-icon {
+  transform: rotate(90deg);
+}
+
+.next-btn {
+  transform: rotate(-90deg);
 }
