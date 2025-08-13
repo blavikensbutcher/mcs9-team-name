@@ -1,3 +1,102 @@
 <section id="application-form" class="section leave-form">
-  <div class="container"></div>
+  <div class="container">
+    <h2 class="section-title">Leave an application</h2>
+    <p class="leave-item-text-up">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <form class="modal-form" action="#">
+      <div class="form-container">
+        <!-- <label class="form-label" for="user-name">Name</label> -->
+        <!-- <div class="form-field"> -->
+        <input
+          class="form-input"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Name"
+        />
+        <!-- </div> -->
+      </div>
+      <div class="form-container">
+        <!-- <label class="form-label" for="phone">Phone</label> -->
+        <!-- <div class="form-field"> -->
+        <input
+          class="form-input"
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Phone"
+        />
+        <!-- </div> -->
+      </div>
+      <div class="form-container">
+        <!-- <label class="form-label" for="mail">Email</label> -->
+        <!-- <div class="form-field"> -->
+        <input
+          class="form-input"
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="Email"
+        />
+        <!-- </div> -->
+      </div>
+      <div class="textarea-container">
+        <!-- <label class="form-label" for="user-comment">Comment</label> -->
+        <textarea
+          name="user-comment"
+          class="form-textarea"
+          id="user-comment"
+          rows="10"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <p class="radio-text">Choose a teacher</p>
+      <div role="group" class="radio">
+        <label for="maria"
+          ><input
+            type="radio"
+            name="teacher"
+            value="maria"
+            id="maria"
+          />Maria</label
+        >
+
+        <label for="artem"
+          ><input
+            type="radio"
+            name="teacher"
+            value="artem"
+            id="artem"
+          />Artem</label
+        >
+
+        <label for="ilona"
+          ><input
+            type="radio"
+            name="teacher"
+            value="ilona"
+            id="ilona"
+          />Ilona</label
+        >
+
+        <label for="volodymyr"
+          ><input
+            type="radio"
+            name="teacher"
+            value="volodymyr"
+            id="volodymyr"
+          />Volodymyr</label
+        >
+      </div>
+      <button type="submit" class="button lesson-button">Send</button>
+      <p class="leave-item-text-down">
+        By clicking on “Send” button, you agree to our
+        <a class="text-link leave-item-text-down" href="/privacy-policy" target="_blank"
+          >Privacy Policy</a
+        >, and allow Promodo to use this information for marketing purposes.
+      </p>
+    </form>
+  </div>
 </section>
