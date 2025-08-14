@@ -19,3 +19,147 @@
   background-color: #41d1ff;
   transition: 200ms ease;
 }
+
+.footer-container {
+  background: var(--black);
+  padding-top: 40px;
+  height: 100%;
+  align-items: flex-start
+}
+
+.footer-logo-link {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-contacts-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.footer-contacts {
+  margin-bottom: 40px;
+}
+
+.footer-address {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 40px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: aquamarine;
+  margin-bottom: 40px;
+}
+
+.footer-menu-link {
+}
+
+.footer-copyright {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02;
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+
+.footer-phone {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0%;
+}
+.footer-legal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.footer-legal-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02;
+  text-decoration: none;
+}
+
+address {
+  font-style: normal; /* прибрати курсив */
+  margin: 0; /* прибрати зовнішні відступи */
+  padding: 0; /* прибрати внутрішні відступи */
+  font-family: inherit; /* використовувати поточний шрифт */
+  font-size: inherit; /* наслідувати розмір */
+  line-height: inherit; /* наслідувати міжрядковий */
+}
+
+.social-item {
+  padding: 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid var(--white-border);
+  transition: var(--common-transition);
+  transition-property: border, background;
+  cursor: pointer;
+}
+
+.social-link {
+  background: transparent;
+  width: 26px;
+  height: 26px;
+  color: var(--white);
+  transition: var(--common-transition);
+  transition-property: color;
+}
+
+.social-icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+  stroke: none;
+}
+
+.social-item:hover,
+.social-item:focus {
+  border: 1px solid transparent;
+  background: var(--gradient-green);
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.footer-divider {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
