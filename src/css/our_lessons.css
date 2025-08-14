@@ -64,31 +64,6 @@
   color: var(--green);
 }
 
-.lesson-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: auto;
-  height: 52px;
-  border: 1px solid var(--green);
-  transition: var(--common-transition);
-  transition-property: background-color, border-color;
-}
-
-.lesson-button.active {
-  background-color: transparent;
-  border: 1px solid var(--white);
-  transition: var(--common-transition);
-  transition-property: color, background-color;
-}
-
-.lesson-button.active:hover,
-.lesson-button.active:focus {
-  background-color: var(--white);
-  color: var(--green);
-}
-
 .active-item {
   background-color: var(--green);
   color: var(--white);
@@ -123,10 +98,6 @@
     color: var(--black);
     opacity: 0.5;
     text-align: center;
-  }
-
-  .lesson-button {
-    height: 60px;
   }
 
   .section-title span::after {
