@@ -20,6 +20,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (min-width: 768px) {
+  .modal-form {
+    padding-left: 102px;
+    padding-right: 102px;
+  }
+}
 /* .form-field {
   position: relative;
 } */
@@ -47,6 +54,13 @@
   margin-bottom: 18px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media screen and (min-width: 768px) {
+ .form-input {
+  height: 56px;
+}
+}
+
 
 .form-input:focus + .input-container {
   color: var(--green);
@@ -99,7 +113,15 @@ textarea {
 }
 
 .textarea-container textarea::placeholder {
-   color: var(--black 10%);
+  color: var(--black 10%);
+}
+
+@media screen and (min-width: 768px) {
+.textarea-container textarea::placeholder {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+}
 }
 
 .text-link {
@@ -123,33 +145,66 @@ textarea {
   margin-top: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .leave-item-text-down {
+  font-size: 14px;
+  line-height: 1.6;
+}
+}
+
 .leave-item-text-up {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0%;
   text-align: center;
-  color: rgba(18, 20, 23, 0.8);
+   color: gba(18, 20, 23, 0.8);
+
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .leave-item-text-up {
+  font-size: 18px;
+  line-height: 1.66;
+  color: rgba(18, 20, 23, 0.5);
+
+}
 }
 
 .form-input::placeholder {
   color: var(--black 10%);
 }
-  
-  .radio{
+
+.radio {
   margin-bottom: 40px;
 }
 
-.radio-text{
-font-weight: 600;
-font-size: 18px;
-line-height: 1.33;
-letter-spacing: -0,02;
-color: var(--black);
-margin-bottom: 14px;
+@media screen and (min-width: 768px) {
+  .radio {
+    display: inline-flex;
+    gap: 16px;
+    margin-bottom: 32 px;
+  }
 }
 
+.radio-text {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+
+@media screen and (min-width: 768px) {
+ .radio-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.33;
+  letter-spacing: -0, 02;
+  color: var(--black);
+  margin-bottom: 14px;
+}
+}
 /* .radio input[type="radio"] {
   margin: 0; 
   margin-right: 8px;
@@ -157,22 +212,27 @@ margin-bottom: 14px;
 } */
 
 .radio label {
- display: flex;           /* робимо flex-контейнер */
-  align-items: center;     /* вирівнювання по вертикалі */
-  gap: 8px;                /* відстань між кружечком і текстом */
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
   cursor: pointer;
 
-
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0,02;
-/* text-align: center; */
-color: var(--black);
-
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0, 02;
+  /* text-align: center; */
+  color: var(--black);
 }
 
-input[type="radio"] {
+@media screen and (min-width: 768px){
+  .radio label {
+font-size: 18px;
+line-height: 1.33;
+}
+}
+
+input[type='radio'] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -180,25 +240,25 @@ input[type="radio"] {
   height: 18px;
   border: 2px solid #12141733; /* зелена рамка */
   border-radius: 50%;
-  background-color: white;   /* білий фон */
+  background-color: white; /* білий фон */
   display: inline-block;
   position: relative;
   cursor: pointer;
   margin: 0; /* щоб не було лишніх відступів */
 }
 
-input[type="radio"]:checked {
+input[type='radio']:checked {
   border-color: var(--green);
 }
 
-input[type="radio"]:checked::after {
-  content: "";
+input[type='radio']:checked::after {
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
   width: 10px;
   height: 10px;
-  background-color:var(--green);
+  background-color: var(--green);
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
