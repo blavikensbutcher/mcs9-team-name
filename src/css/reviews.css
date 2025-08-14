@@ -79,7 +79,7 @@
 }
 
 .info-subtitle {
-  color: var(--white-review-text);
+  color: var(--white-container);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.33;

@@ -9,7 +9,7 @@
   --white: #fff;
   --white-border: rgba(255, 255, 255, 0.1);
   --white-button-text: rgba(255, 255, 255, 0.4);
-  --white-review-text: rgba(255, 255, 255, 0.5);
+  --white-container: rgba(255, 255, 255, 0.5);
   --hover-green: #38ae5f;
   --form-border: rgba(18, 20, 23, 0.1);
   --form-agreement-text: rgba(18, 20, 23, 0.5);
@@ -39,15 +39,8 @@ a {
 }
 
 .section {
-  margin-bottom: 80px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 100px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 150px;
-  }
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .container {
@@ -57,7 +50,6 @@ a {
   max-width: 375px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .title-primary {
@@ -114,21 +106,38 @@ a {
 }
 
 .button {
+  display: inline-flex;
+  width: 100%;
+  height: 52px;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green);
+  border: 0;
+  border-radius: 12px;
+  outline: none;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.7;
   color: var(--white);
-  background-color: var(--green);
-  border-radius: 12px;
-  padding: 14px 32px;
-  border: none;
-  transition: var(--common-transition);
-  transition-property: background-color, color;
+  line-height: 1.71;
+  transition: background-color var(--common-transition);
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--hover-green);
+}
+
+.button.outlined-button {
+  background-color: transparent;
+  border: 1px solid var(--white-button-text);
+}
+
+.button.outlined-button:hover,
+.button.outlined-button:focus {
+  color: var(--green);
+  background-color: var(--white);
+  border: 1px solid var(--white);
 }
 
 .visually-hidden {
@@ -167,7 +176,7 @@ a {
   transform: scaleX(1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
     padding: 0 20px;
   }
@@ -175,7 +184,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .section {
-    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .container {
@@ -184,9 +194,10 @@ a {
   }
 
   .button {
-    padding: 16px 32px;
     font-size: 18px;
-    line-height: 1.56;
+    line-height: inherit;
+    padding: 16px 32px;
+    height: 60px;
   }
 
   .title-primary {
@@ -215,12 +226,13 @@ a {
 
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1152px;
+    max-width: 1280px;
     padding: 0 64px;
   }
 
   .section {
-    margin-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 
   .section-title span::after {
