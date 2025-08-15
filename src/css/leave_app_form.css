@@ -314,3 +314,12 @@ input[type='radio']:checked::after {
     width: 1024px;
   }
 }
+
+/* validation */
+
+
+.leave-form .form-input:invalid:not(:placeholder-shown),
+.leave-form .form-textarea:invalid:not(:placeholder-shown){
+  border-color: #e53935;
+  box-shadow: 0 0 6px rgba(229,57,53,.35);
+}
