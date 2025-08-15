@@ -189,7 +189,7 @@ address {
   cursor: pointer;
 }
 
-.social-link {
+.social-link-footer {
   background: transparent;
   width: 26px;
   height: 26px;
@@ -198,7 +198,7 @@ address {
   transition-property: color;
 }
 
-.social-icon {
+.social-icon-footer {
   display: block;
   width: 26px;
   height: 26px;
@@ -206,8 +206,8 @@ address {
   stroke: none;
 }
 
-.social-item:hover,
-.social-item:focus {
+.social-icon-footer:hover,
+.social-icon-footer:focus {
   border: 1px solid transparent;
   background: var(--gradient-green);
 }
