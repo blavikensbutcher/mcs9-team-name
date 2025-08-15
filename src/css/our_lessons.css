@@ -115,6 +115,10 @@
     flex-basis: calc((100% - 64px) / 3);
   }
 
+  .lessons-list {
+    max-width: 1024px;
+  }
+
   .section-title span::after {
     top: calc(100% - 20px);
     height: 20px;
