@@ -305,12 +305,24 @@ input[type='radio']:checked::after {
     padding: 0;
   }
 }
-.cccc {
+.form-img-container {
   width: 100%;
 }
 
 @media screen and (min-width: 1280px) {
-  .cccc {
+  .form-img-container {
     width: 1024px;
   }
 }
+
+/* validation */
+
+
+.leave-form .form-input:invalid:not(:placeholder-shown),
+.leave-form .form-textarea:invalid:not(:placeholder-shown){
+  border-color: #e53935;
+  box-shadow: 0 0 6px rgba(229,57,53,.35);
+}
+
+
+

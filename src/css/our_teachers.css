@@ -32,6 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    padding: 0 64px;
   }
 
   .teachers-card {
