@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "build": "vite build --base=/mcs9-team-name/",
+    "build": "vite build --base=/mcs9-incredibles/",
     "preview": "vite preview"
   },
   "devDependencies": {
