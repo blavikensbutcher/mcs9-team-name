@@ -38,6 +38,8 @@
               name="user-name"
               id="user-name"
               placeholder="Name"
+              pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]{2,}$"
+              title="Мінімум 2 літери, тільки букви та пробіли"
             />
           </div>
           <div class="form-container">
@@ -48,6 +50,8 @@
               name="phone"
               id="phone"
               placeholder="Phone"
+              pattern="^\+38\s?\(0\d{2}\)\s?\d{3}-\d{2}-\d{2}$"
+              title="Формат: +38 (0XX) XXX-XX-XX"
             />
           </div>
           <div class="form-container">
@@ -58,6 +62,8 @@
               name="mail"
               id="mail"
               placeholder="Email"
+              pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+              title="Введіть правильний email"
             />
           </div>
           <div class="textarea-container">
