@@ -43,8 +43,7 @@
 }
 @media screen and (min-width: 1280px) {
   .footer-container {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding: 64px 64px 64px 64px;
   }
 }
 
@@ -110,6 +109,8 @@
   .footer-bottom {
     margin-bottom: 23px;
     margin-top: 23px;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 }
 
@@ -216,4 +217,10 @@ address {
   margin: 0;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 1280px) {
+ .footer-divider {
+  width: 1024px;
+}
 }
