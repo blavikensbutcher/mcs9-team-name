@@ -73,7 +73,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  transition: 250ms var(--common-transition);
+  transition: var(--common-transition);
   transition-property: background-color, fill;
 }
 
